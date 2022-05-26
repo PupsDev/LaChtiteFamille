@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- In res/values/themes.xml -->
+    <style name="Theme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+        ...
+        <item name="colorPrimary">@color/navy_700</item>
+        <item name="colorPrimaryVariant">@color/navy_900</item>
+        <item name="colorSecondary">@color/green_300</item>
+        <item name="colorSecondaryVariant">@color/green_900</item>
+        <!-- Using default values for colorOnPrimary, colorSurface, colorError, etc. -->
+    </style>
+
+
+</resources>
