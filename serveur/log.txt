@@ -1,0 +1,5 @@
+/sendimages/testset
+/GETSMS/865879031972319;0
+/nice%20ports%2C/Tri%6Eity.txt%2ebak
+/phpmyadmin/
+/GETContact/866945044829041
