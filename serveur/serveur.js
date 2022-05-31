@@ -394,14 +394,11 @@ const requestListener = function (req, res) {
     }
     else{
       if(rawData != "/favicon.ico" && rawData != "/"){
-        console.log("\x1b[5m\x1b[31m", "Suspicious : \x1b[0m\x1b[41m\x1b[37m"+rawData,"\x1b[0m");  //cyan
+        console.log("\x1b[5m\x1b[31m", "Suspicious : \x1b[0m\x1b[41m\x1b[37m"+rawData,"\x1b[0m");  //red
         log += rawData + "\n";
-
-        const trollUrl = ["https://www.youtube.com/watch?v=1gu3W6-GHiw","https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://www.youtube.com/watch?v=QLWeDcTKYYA", "https://www.youtube.com/watch?v=QVYSsn_HL1w","https://youtu.be/6-xEyHYOXAs?t=19","https://www.youtube.com/watch?v=1nIEk047YXw","https://www.youtube.com/watch?v=aIVsz5Pj0eE","https://www.youtube.com/watch?v=rJ1wooLVyvE","https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030939438/","https://youtu.be/Uz2X9vtGkgI?t=295","https://www.youtube.com/watch?v=TgFYdzRx7wg","https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjeyaKG1vr3AhXV8LsIHYdNB9IQFnoECAUQAQ&url=https%3A%2F%2Fhal.archives-ouvertes.fr%2Fhal-03628382%2Fdocument&usg=AOvVaw1HOQEmFexh-QD-5lJsSBJq","https://youtu.be/st8xWyMZXOU?t=12"];
-        const random = trollUrl[Math.floor(Math.random() * trollUrl.length)];
-
+        
         res.writeHead(404);
-        res.end('<!DOCTYPE html><html><head><title>HTML Meta Tag</title><meta http-equiv = "refresh" content = "1; url = '+random+'" /></head><body><p>Don\'t hack me please :\')</p></body></html>');
+        res.end('erreur');
       }
     }
   }
